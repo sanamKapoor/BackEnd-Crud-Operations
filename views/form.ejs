@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container-fluid bg-primary vh-100 pt-5">
+    <form method="POST" class="form p-4 rounded border w-50 mx-auto bg-dark">
+      <input type="text" name="name" id="" placeholder="Enter Username" class="form-control" value="<%= user ? user.name : '' %>">
+      <br>
+      <input type="email" name="email" id="" placeholder="Enter Email" class="form-control" value="<%= user ? user.email : '' %>">
+      <br>
+      <div class="row">
+        <div class="col">
+          <input type="text" name="city" id="" placeholder="City" class="form-control" value="<%= user ? user.city : '' %>">
+        </div>
+        <div class="col">
+          <input type="text" name="mobile" id="" placeholder="Mobile" class="form-control" value="<%= user ? user.mobile : '' %>">
+        </div>
+      </div>
+      <button type="submit" class="w-100 btn btn-outline-light mt-3">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
